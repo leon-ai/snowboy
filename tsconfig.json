@@ -19,7 +19,7 @@
     },
     "files": [
       "lib/node/index.ts",
-      "lib/node/node-pre-gyp.d.ts",
+      "lib/node/mapbox__node-pre-gyp.d.ts",
       "lib/node/SnowboyDetectNative.d.ts",
       "node_modules/@types/node/index.d.ts"
     ],

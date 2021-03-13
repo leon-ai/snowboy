@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-NODE_VERSIONS=( "4.0.0" "5.0.0" "6.0.0" "7.0.0" "8.0.0" "9.0.0")
+NODE_VERSIONS=( "14.16.0" )
 
 # Makes sure nvm is installed.
 if ! which nvm > /dev/null; then
@@ -18,6 +18,6 @@ for i in "${NODE_VERSIONS[@]}"; do
    # build, package and publish for the current package version
    npm install nan
    npm install aws-sdk
-   npm install node-pre-gyp
-   ./node_modules/.bin/node-pre-gyp clean configure build package publish
+   npm install @mapbox/node-pre-gyp
+   ./node_modules/@mapbox/node-pre-gyp/bin/node-pre-gyp clean configure build package publish
 done

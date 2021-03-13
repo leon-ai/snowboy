@@ -1,7 +1,7 @@
 import * as stream from 'stream';
 import * as path from 'path';
 import * as fs from 'fs';
-import * as binary from 'node-pre-gyp';
+import * as binary from '@mapbox/node-pre-gyp';
 
 const bindingPath: string = binary.find(path.resolve(path.join(__dirname, '../../package.json')));
 const SnowboyDetectNative: SnowboyDetectNativeInterface = require(bindingPath).SnowboyDetect;

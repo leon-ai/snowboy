@@ -25,7 +25,7 @@
     }
   ],
   "dependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.1",
+    "@mapbox/node-pre-gyp": "^1.0.4",
     "nan": "^2.14.2"
   },
   "deprecated": false,
